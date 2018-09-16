@@ -23,7 +23,6 @@ namespace HelloWorld
 		public QuotesPage ()
 		{
 			InitializeComponent ();
-            
         }
 
         private void Button_Clicked(object sender, EventArgs e)
