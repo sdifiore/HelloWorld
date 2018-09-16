@@ -12,6 +12,8 @@ namespace HelloWorld
         public MainPage()
         {
             InitializeComponent();
+
+            slider.Value = 0.5;
         }
     }
 }

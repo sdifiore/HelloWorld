@@ -4,11 +4,12 @@
              xmlns:local="clr-namespace:HelloWorld"
              x:Class="HelloWorld.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+    <StackLayout BindingContext="{x:Reference slider}" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+        <BoxView Color="Green" Opacity="{Binding Value}" />
+        <Label Text="{Binding Value, StringFormat='Value is {0:F2}'}" 
+               Opacity="{Binding Value}"
+               x:Name="label" />
+        <Slider x:Name="slider" />
     </StackLayout>
 
 </ContentPage>
