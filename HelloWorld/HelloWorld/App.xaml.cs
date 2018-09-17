@@ -11,7 +11,7 @@ namespace HelloWorld
         {
             InitializeComponent();
 
-            MainPage = new StackPage();
+            MainPage = new GridEx1();
         }
 
         protected override void OnStart()
